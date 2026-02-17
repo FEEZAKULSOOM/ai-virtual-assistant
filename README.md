@@ -63,7 +63,7 @@
 
 <div align="center">
 
-### 🌐 **Experience Sheeva AI Live**
+### 🌐 **Experience Live**
 
 **👉 [https://sheeva-virtual-assistant.netlify.app/](https://sheeva-virtual-assistant.netlify.app/)**
 
