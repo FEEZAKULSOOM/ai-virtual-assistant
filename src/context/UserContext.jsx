@@ -67,7 +67,7 @@ function UserContext({ children }) {
 
         setPrompt(displayText);
         setResponse(true);
-        speak(newText);
+        speak(displayText);
     }
 
     // Initialize speech recognition
