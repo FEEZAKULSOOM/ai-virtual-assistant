@@ -45,6 +45,7 @@ function UserContext({ children }) {
             setSpeaking(false);
             setResponse(false);
             setPrompt("listening...");
+
         };
 
         window.speechSynthesis.speak(textSpeak);
@@ -120,6 +121,11 @@ function UserContext({ children }) {
             setResponse(true);
             setPrompt("opening whatsapp");
             speak("opening whatsapp");
+        }
+        else if (command.includes("who are you") && command.includes("what is your name")) {
+            setResponse(true);
+            setPrompt("I am large language model trained by fiza farid");
+            speak("I am large language model trained by fiza farid");
         }
         else if (command.includes("open") && command.includes("facebook")) {
             window.open("https://www.facebook.com/", "_blank");
