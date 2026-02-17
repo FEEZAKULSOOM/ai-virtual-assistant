@@ -1,7 +1,7 @@
 
 <div align="center">
   
-![Banner](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Sheeva%20AI%20Virtual%20Assistant&fontSize=50&fontColor=ffffff&animation=twinkling)
+![Banner](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=AI%20Virtual%20Assistant&fontSize=50&fontColor=ffffff&animation=twinkling)
 
 <p align="center">
   <a href="#-features"><img src="https://img.shields.io/badge/Features-6366f1?style=for-the-badge&logo=starship&logoColor=white"/></a> •
@@ -43,11 +43,6 @@
 
 ## ✨ Features
 
-<div align="center">
-
-<img src="https://via.placeholder.com/800x400/000000/ffffff?text=Sheeva+AI+Virtual+Assistant+Interface" width="100%" style="border-radius: 12px; border: 2px solid #0066ff;"/>
-
-</div>
 
 ### 🎯 **Core Capabilities**
 
@@ -62,30 +57,15 @@
 | 📱 **Responsive Design** | Optimized for all screen sizes | ✅ |
 | 🔄 **Auto-reset Interface** | Returns to button after speech completion | ✅ |
 
-### 🎤 **Voice Commands Supported**
 
-| Command | Action |
-|---------|--------|
-| "Open YouTube" | Opens YouTube in new tab |
-| "Open Google" | Opens Google search |
-| "Open Instagram" | Opens Instagram |
-| "Open WhatsApp" | Opens WhatsApp |
-| "Open Facebook" | Opens Facebook |
-| "Open LinkedIn" | Opens LinkedIn |
-| "Open Twitter" | Opens Twitter |
-| "What's the time?" | Tells current time |
-| "What's the date?" | Tells current date |
-| Any other question | AI-powered response from Gemini |
-
----
 
 ## 🚀 Live Demo
 
 <div align="center">
 
-### 🌐 **Experience Sheeva AI Live**
+### 🌐 **Experience Live**
 
-**👉 [https://sheeva-ai.vercel.app](https://sheeva-ai.vercel.app/)**
+**👉 [https://sheeva-virtual-assistant.netlify.app/](https://sheeva-virtual-assistant.netlify.app/)**
 
 | Test Command | Expected Response |
 |--------------|-------------------|
