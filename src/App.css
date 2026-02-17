@@ -1,0 +1,94 @@
+/**
+ * App.css
+ * Main styles for the Sheeva AI Assistant application
+ * @author Your Name
+ * @version 1.0.0
+ */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 10px;
+    gap: 12px;
+}
+
+/**
+ * AI Avatar Image
+ * Styled with responsive height
+ */
+#ai {
+    height: 55%;
+}
+
+/**
+ * Assistant Name/Tagline
+ * Gradient text effect using #0066ff and #00ffff
+ */
+span {
+    color: white;
+    font-size: 2.2vmax;
+    background: linear-gradient(to right, #0066ff, #00ffff);
+    background-clip: text;
+    color: transparent;
+}
+
+/**
+ * Main Action Button
+ * Styled with blue gradient and glow effect
+ */
+button {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1392b5;
+    box-shadow: 2px 2px 50px #138fb5;
+    cursor: pointer;
+}
+
+/**
+ * Listening Animation Image
+ */
+#speakImg {
+    width: 180px;
+}
+
+/**
+ * Response Text Display
+ */
+p {
+    font-size: 1.5vmax;
+    color: white;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+/**
+ * Response Container
+ * Holds the animation image and text
+ */
+.response {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/**
+ * AI Speaking Animation Image
+ */
+#aiVoiceImg {
+    width: 50vh;
+    height: 100px;
+}

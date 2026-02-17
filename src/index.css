@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #000;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Grid Background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(rgba(0, 102, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridMove 10s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Vertical Glowing Lines - ACTUALLY USED */
+.vertical-lines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.vertical-lines div {
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #06f, #0ff, #06f, transparent);
+  animation: verticalGlow 4s ease-in-out infinite;
+  opacity: 0.4;
+  box-shadow: 0 0 15px #06f, 0 0 30px #0ff;
+}
+
+.vertical-lines div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.vertical-lines div:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.vertical-lines div:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.vertical-lines div:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.vertical-lines div:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.vertical-lines div:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.vertical-lines div:nth-child(7) {
+  animation-delay: 3s;
+}
+
+.vertical-lines div:nth-child(8) {
+  animation-delay: 3.5s;
+}
+
+/* Animations */
+@keyframes gridMove {
+  100% {
+    transform: translate(40px, 40px);
+  }
+}
+
+@keyframes verticalGlow {
+
+  0%,
+  100% {
+    opacity: .2
+  }
+
+  50% {
+    opacity: .8
+  }
+}
