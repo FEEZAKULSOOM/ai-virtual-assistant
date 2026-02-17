@@ -5,8 +5,8 @@
  * @version 1.0.0
  */
 
-// Gemini API Key - Replace with your own key
-let api_key = "AIzaSyDdae8eLiDSvNji_Wa8GtNyv5xpLKCHl_Y";
+// Get API key from environment variable
+const api_key = import.meta.env.VITE_GEMINI_API_KEY;
 
 import { GoogleGenAI } from '@google/genai';
 
@@ -16,6 +16,12 @@ import { GoogleGenAI } from '@google/genai';
  * @returns {Promise<string>} - AI generated response
  */
 async function main(prompt) {
+    // Check if API key exists
+    if (!api_key) {
+        console.error("Gemini API key is missing. Please check your .env file.");
+        return "API key not configured. Please add VITE_GEMINI_API_KEY to your .env file.";
+    }
+
     // Initialize Gemini AI client
     const ai = new GoogleGenAI({
         apiKey: api_key,
@@ -51,14 +57,19 @@ async function main(prompt) {
         },
     ];
 
-    // Generate content from AI
-    const response = await ai.models.generateContent({
-        model,
-        config,
-        contents,
-    });
+    try {
+        // Generate content from AI
+        const response = await ai.models.generateContent({
+            model,
+            config,
+            contents,
+        });
 
-    return response.text;
+        return response.text;
+    } catch (error) {
+        console.error("Error calling Gemini API:", error);
+        return "Sorry, I encountered an error. Please try again.";
+    }
 }
 
 export default main;
