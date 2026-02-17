@@ -122,7 +122,7 @@ function UserContext({ children }) {
             setPrompt("opening whatsapp");
             speak("opening whatsapp");
         }
-        else if (command.includes("who are you") && command.includes("what is your name")) {
+        else if (command.includes("who are you") || command.includes("what is your name")) {
             setResponse(true);
             setPrompt("I am Sheeva  a  large language model trained by fiza farid");
             speak("I am Sheeva large language model trained by fiza farid");
