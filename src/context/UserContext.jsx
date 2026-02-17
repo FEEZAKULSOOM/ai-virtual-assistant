@@ -124,8 +124,8 @@ function UserContext({ children }) {
         }
         else if (command.includes("who are you") && command.includes("what is your name")) {
             setResponse(true);
-            setPrompt("I am large language model trained by fiza farid");
-            speak("I am large language model trained by fiza farid");
+            setPrompt("I am Sheeva  a  large language model trained by fiza farid");
+            speak("I am Sheeva large language model trained by fiza farid");
         }
         else if (command.includes("open") && command.includes("facebook")) {
             window.open("https://www.facebook.com/", "_blank");
