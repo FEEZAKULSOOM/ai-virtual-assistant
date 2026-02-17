@@ -1,7 +1,7 @@
 
 <div align="center">
   
-![Banner](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Sheeva%20AI%20Virtual%20Assistant&fontSize=50&fontColor=ffffff&animation=twinkling)
+![Banner](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=AI%20Virtual%20Assistant&fontSize=50&fontColor=ffffff&animation=twinkling)
 
 <p align="center">
   <a href="#-features"><img src="https://img.shields.io/badge/Features-6366f1?style=for-the-badge&logo=starship&logoColor=white"/></a> •
@@ -85,7 +85,7 @@
 
 ### 🌐 **Experience Sheeva AI Live**
 
-**👉 [https://sheeva-ai.vercel.app](https://sheeva-ai.vercel.app/)**
+**👉 [https://sheeva-virtual-assistant.netlify.app/](https://sheeva-virtual-assistant.netlify.app/)**
 
 | Test Command | Expected Response |
 |--------------|-------------------|
